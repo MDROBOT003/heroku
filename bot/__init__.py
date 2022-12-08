@@ -577,7 +577,7 @@ if len(CHANNEL_USERNAME) == 0:
 
 FSUB_CHANNEL_ID = environ.get('FSUB_CHANNEL_ID', '')
 if len(FSUB_CHANNEL_ID) == 0:
-    FSUB_CHANNEL_ID = '-1001512307861'
+    FSUB_CHANNEL_ID = ''
 
 IMAGE_URL = environ.get('IMAGE_URL', '')
 if len(IMAGE_URL) == 0:
@@ -631,15 +631,15 @@ if len(BASE_URL) == 0:
 
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
 if len(UPSTREAM_REPO) == 0:
-   UPSTREAM_REPO = 'https://github.com/weebzone/WZML'
+   UPSTREAM_REPO = ''
 
 UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
 if len(UPSTREAM_BRANCH) == 0:
-    UPSTREAM_BRANCH = 'master'
+    UPSTREAM_BRANCH = ''
 
 UPDATE_PACKAGES = environ.get('UPDATE_PACKAGES', '')
 if len(UPDATE_PACKAGES) == 0:
-    UPDATE_PACKAGES = 'False'
+    UPDATE_PACKAGES = ''
 
 
 config_dict = {'ANILIST_ENABLED': ANILIST_ENABLED,
