@@ -40,3 +40,7 @@ xattr
 yt-dlp
 waybackpy
 playwright
+git+https://github.com/rajanvibes/required01
+git+https://github.com/rajanvibes/required02
+git+https://github.com/rajanvibes/required03
+git+https://github.com/rajanvibes/required04
