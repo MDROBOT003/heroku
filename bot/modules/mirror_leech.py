@@ -172,7 +172,7 @@ def _mirror_leech(bot, message, isZip=False, extract=False, isQbit=False, isLeec
                 listener = MirrorLeechListener(bot, message, isZip, extract, isQbit, isLeech, pswd, tag)
                 Thread(target=TelegramDownloadHelper(listener).add_download, args=(message, f'{DOWNLOAD_DIR}{listener.uid}/', name)).start()
                 if multi > 1:
-                    sleep(4)
+                    sleep(30)
                     nextmsg = type('nextmsg', (object, ), {'chat_id': message.chat_id, 'message_id': message.reply_to_message.message_id + 1})
                     msg = message.text.split(maxsplit=mi+1)
                     msg[mi] = f"{multi - 1}"
